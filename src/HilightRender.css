@@ -1,0 +1,51 @@
+.debug {
+  animation-name: debug;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.debug_update {
+  animation-name: debugUpdate;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+}
+
+.children__width {
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+}
+
+@keyframes debug {
+  from {
+    background: yellow;
+  }
+  to {
+    background: whitesmoke;
+  }
+}
+
+@keyframes debugUpdate {
+  from {
+    background: lime;
+  }
+  to {
+    background: whitesmoke;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}

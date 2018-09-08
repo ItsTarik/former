@@ -1,15 +1,90 @@
 .former__wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  margin: 20px;
+  margin: 50px 20%;
   padding: 50px;
-  border: 1px solid red;
+  border: 2px solid rgba(32, 28, 28, 0.637);
+}
+
+.former__wrapper::before {
+  display: inline-block;
+  content: '<Former />';
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgba(32, 28, 28, 0.637);
+  background: white;
+  transform: translateY(-68px);
+}
+
+.former__control {
+  width: 300px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.former__control > input {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+}
+
+.former__control > input:hover {
+  background: rgb(221, 80, 80);
+}
+
+.member__container {
+  margin: 10px auto;
 }
 
 .member {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
   height: 40px;
-  margin: 10px;
+  margin: 10px auto;
+  font-size: 17px;
+}
+
+.member__container label {
+  display: block;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input.valid {
+  border: 2px solid lime;
+}
+
+input.invalid {
+  border: 2px solid rgb(233, 50, 50);
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-delay: 0.0025s;
+}
+
+label.invalid {
+  color: red;
+}
+
+label.valid {
+  color: lime;
+}
+
+.state {
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.5px solid;
+  background: rgb(219, 215, 215);
 }
