@@ -24,7 +24,7 @@ class Input extends Component {
     const isReallyTouched = this.state.value.length > 0 ? true : this.state.touched && canReset;
     const isValid = isReallyTouched && state.value.length > 5 && state.value.length < 10;
 
-    console.log('isReallyTouched', isReallyTouched);
+    // console.log('isReallyTouched', isReallyTouched);
 
     return children({
       state,

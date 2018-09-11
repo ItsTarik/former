@@ -6,10 +6,6 @@ import Former from './Former';
 import Render from './Render';
 import Input from './FormerInput';
 
-import NameInput from './NameInput';
-import AgeInput from './AgeInput';
-import CheckBoxGroup from './CheckBoxGroup';
-
 import './App.css';
 
 class App extends Component {
